@@ -18,7 +18,10 @@ li{
 .container{
     width: 1140px;
     margin: 0 auto;
+}.section_ttl h2 span{
+    color: #f34236;
 }
+
 .section_ttl h2{
     text-align: center;
     font-size: 35px;
@@ -162,7 +165,7 @@ li{
     width:100%;
 }#about_me .contentItem {
     width: 60%;
-    padding:0 80px ;
+   padding-left: 80px;
 }
 #about_me .contentItem .section_ttl h2{
     font-size:35px;
@@ -182,6 +185,7 @@ li{
     background:black;
     left: 0;
     bottom: 0;
+    margin-left: 50px;
 }
 #about_me .contentItem .section_ttl h4{
     font-size:20px;
@@ -241,6 +245,39 @@ li{
 #myServices{
     background: #F3F3F3;
     padding:100px 0;
+}
+#myServices .contentItem {
+    margin-top: 40px;
+}
+#myServices .contentItem .contentItem_text{
+    width:350px;
+    height: auto;
+    text-align: center;
+    margin:15px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding:40px 20px;
+}
+#myServices .contentItem .contentItem_text:hover{
+    border-color:#f34236;
+}
+#myServices .contentItem .contentItem_text span{
+    font-size:60px;
+   color:#f34236;
+   margin: 15px 0;
+}
+#myServices .contentItem .contentItem_text h4{
+    font-size:18px;
+    margin-bottom: 10px;
+}
+#myServices .contentItem .contentItem_text p{
+    font-size:15px;
+    color:#828282;
+    line-height: 1.6;
 }
 
 /*My services css end*/
