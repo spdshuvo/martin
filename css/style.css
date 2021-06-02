@@ -21,12 +21,12 @@ li{
 }.section_ttl h2 span{
     color: #f34236;
 }
-
 .section_ttl h2{
     text-align: center;
     font-size: 35px;
     font-weight: 600;
     position: relative;
+    padding-top: 100px;
 }
 .section_ttl h2::after{
     position:absolute;
@@ -67,10 +67,11 @@ li{
     width: 80%;
     text-align: right;
 }
-#navber .menu ul li {
+ .menu ul li {
     display: inline-block;
+    position: relative;
 }
-#navber .menu ul li a {
+.menu ul li a {
     display: block;
     padding:0 10px;
     font-weight: 600;
@@ -79,10 +80,10 @@ li{
     line-height: 70px;
     position: relative;
 }
-#header #navber .menu ul  li  a::after{
+#navber .menu ul  li  a::after{
     position: absolute;
     content:"";
-    width: 0;
+    width:0;
     height: 3px;
     right: 0;
     bottom: 0;
@@ -93,7 +94,17 @@ li{
     -ms-transition:all linear 0.3;
     -o-transition:all linear 0.3;
 }
-#header #navber .menu  ul  li a:hover::after
+.menu ul  li:first-child::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    height: 3px;
+    right: 0;
+    bottom: 0;
+    background-color:#fff;
+    transition:all linear 0.3;
+}
+#navber .menu ul li a:hover::after
 {
     width: 100%;
     right:auto;
@@ -218,7 +229,7 @@ li{
 }
 .icon  a:hover{
     background: #fff;
-    color: #111111;
+    color:#111111;
 }
 #about_me .contentItem .about_btn a{
    display: inline-block;
@@ -244,7 +255,7 @@ li{
 /*My services css start*/
 #myServices{
     background: #F3F3F3;
-    padding:100px 0;
+    padding-bottom: 100px;
 }
 #myServices .contentItem {
     margin-top: 40px;
@@ -253,6 +264,7 @@ li{
     width:350px;
     height: auto;
     text-align: center;
+    border: 5px solid #fff;
     margin:15px 15px;
     background-color: #fff;
     border-radius: 5px;
@@ -261,10 +273,16 @@ li{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding:40px 20px;
+    box-shadow:0 0 20px -20px #111,0 0 20px -20px #111;
+    transition: all ease-in-out 0.35s;
+    -webkit-transition: all ease-in-out 0.35s;
+    -moz-transition: all ease-in-out 0.35s;
+    -ms-transition: all ease-in-out 0.35s;
+    -o-transition: all ease-in-out 0.35s;
 }
 #myServices .contentItem .contentItem_text:hover{
     border-color:#f34236;
-}
+} 
 #myServices .contentItem .contentItem_text span{
     font-size:60px;
    color:#f34236;
@@ -279,6 +297,164 @@ li{
     color:#828282;
     line-height: 1.6;
 }
-
 /*My services css end*/
-
+/*My Resume css start*/
+#myResume{
+    padding-bottom:80px;
+}
+.myResume_contentItem .contentItem_text{
+    width:48%;
+    margin:40px 30px 0 0 ;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 30px -4px #1113,0 0 20px -20px #1111111f;
+}
+.myResume_contentItem .contentItem_text:nth-child(2){
+    margin-right:0 ;
+}
+.myResume_contentItem .contentItem_text h3{
+    font-size:20px;
+    color: #f34236;
+}
+.myResume_contentItem .contentItem_text h4{
+    font-size:18px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.myResume_contentItem .contentItem_text span{
+    padding:5px 0;
+    color:#828282;
+}
+.myResume_contentItem .contentItem_text p{
+    font-size:15px;
+    line-height:1.6;
+    color:#828282;
+}
+/*My Resume css end*/
+/*Connecting section css start*/
+#hire_me{
+    background:#f34236;
+    text-align: center;
+    padding:50px 0;
+}
+#hire_me h3{
+    font-size:32px;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 10px;
+}
+#hire_me a {
+    display: inline-block;
+    font-size:14px;
+    padding: 12px 20px ;
+    background-color: #fff;
+    border:1px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top:20px;
+    color: #f34236;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#hire_me a:hover{
+    background:none;
+    color:#fff;
+}
+/*Connecting section css end*/
+/*My portfolio section css start*/
+#myPortfolio .menu{
+    text-align: center;
+}
+#myPortfolio .menu ul li a {
+    color:#111111;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+#myPortfolio .menu ul li a:hover{
+    color: #f34236;
+}
+#myPortfolio .menu ul li a::after{
+    background-color:#f34236;
+    
+}
+#myPortfolio .menu ul li::after{
+    background-color:#f34236;
+}
+.myPortfolio_item .contentItem{
+    width: 350px;
+    height:auto;
+    margin:10px;
+    border:5px solid #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 30px -4px #1113,0 0 20px -20px #1111111f;
+}
+.myPortfolio_item .contentItem::after,
+.myPortfolio_item .contentItem::before{
+    position: absolute;
+    content:"";
+    width:60px;
+    height: 2px;
+    left:50%;
+    top: 50%;
+    bottom: 50%;
+    background-color:#fff;
+    transform: translate(-50%, -50%);
+    transition:all linear 0.3;
+    -webkit-transition:all linear 0.5;
+    -moz-transition:all linear 0.3;
+    -ms-transition:all linear 0.3;
+    -o-transition:all linear 0.3;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    opacity:0;
+    visibility: hidden;
+}
+.myPortfolio_item .contentItem::after{
+    width:2px;
+    height: 60px;
+}
+.myPortfolio_item .contentItem img{
+    width: 100%;
+    display: block;
+}
+.myPortfolio_item .contentItem a h3{
+    text-align: center;
+    background:#f34236;
+    padding:10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity:0;
+    color:#fff;
+    visibility: hidden;
+}
+.myPortfolio_item .contentItem:hover{
+    background:#a76a66 ! important ;
+}
+.myPortfolio_item .contentItem:hover a h3
+{
+    opacity: 1;
+    visibility:visible;
+}
+.myPortfolio_item .contentItem:hover::after,
+.myPortfolio_item .contentItem:hover::before{
+    opacity: 1;
+    visibility:visible;
+}
+/*My portfolio section css end*/
