@@ -52,7 +52,31 @@ li{
     height:100vh;
 }
 #navber{
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    box-shadow:0 0 15px 5px rgba(58, 78, 95, 0.2) ;
+    position:fixed;
+    top:0;
+    right:0;
+    left: 0;
+    z-index: 99999999999;
+    transition:linear .7s;
+    -webkit-transition:linear .7s;
+    -moz-transition:linear .7s;
+    -ms-transition:linear .7s;
+    -o-transition:linear .7s;
+}
+.stickyNav {
+    background:#fff;
+    animation: stickyNav 0.7s;
+    -webkit-animation: stickyNav 0.7s;
+}
+@keyframes stickyNav {
+    from{
+        top:-30px;
+    }
+    to{
+        top:0;
+    }
 }
 #navber .logo{
     width: 20%;
@@ -80,7 +104,7 @@ li{
     line-height: 70px;
     position: relative;
 }
-#navber .menu ul  li  a::after{
+#navber .menu ul  li a::after{
     position: absolute;
     content:"";
     width:0;
@@ -109,6 +133,16 @@ li{
     width: 100%;
     right:auto;
     left: 0;
+}
+#navber.stickyNav .menu ul li a{
+    color: #111111;
+}
+#navber.stickyNav .menu ul  li:first-child::after{
+    background-color:#f34236;
+}
+#navber.stickyNav .logo a{
+    color: #f34236;
+    padding: 15px;
 }
 .banner_content{
     position: absolute;
@@ -458,3 +492,20 @@ li{
     visibility:visible;
 }
 /*My portfolio section css end*/
+
+
+.backtoTop{
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    font-size: 25px;
+    background-color: #f34236;
+    padding: 15px 10px;
+    border:none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+}
