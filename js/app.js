@@ -7,10 +7,33 @@ $(function (){
             $('#navber').removeClass('stickyNav')
         }
     })
+    //Back to top button
     $(window).on('scroll',function(){
         if($(window).scrollTop()>600){
-            $(h)
+            $('.backtoTop').fadeIn('slow')
+        }else{
+            $('.backtoTop').fadeOut('slow')
         }
     })
+    $('.backtoTop').on('click',function(){
+        $('html,body').animate({
+            scrollTop:0
+        },1000)
+    })
+    //smooth scroll
+    $('a').on('click',function(e){
+        e.preventDefault()
+        
+        if(this.hash !==''){
+            var hash = this.hash
 
+            $('html,body').animate({
+                scrollTop: $(hash).offset().top - 71
+            },1000)
+        }
+    })
+    //preloader
+    $(window).on('load', function(){
+        $('#preloader').fadeOut(3000)
+    })
 })
