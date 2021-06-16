@@ -36,4 +36,18 @@ $(function (){
     $(window).on('load', function(){
         $('#preloader').fadeOut(3000)
     })
+    //slick active 
+    $(".banner_content").slick({
+        autoplay:'true',
+        autoplaySpeed:'3000',
+        arrows:'false',
+
+    })
+    //venobox activtion
+    $('.portfolio_img_link').venobox({
+        framewidth : '700px',
+        frameheight: '700px',
+        spinner:'wave',
+    })
+    
 })

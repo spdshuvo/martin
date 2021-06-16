@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font/flaticon.css">
     <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="preloader">
+    <!--<div id="preloader">
         <img src="img/monophy.gif" alt="">
-    </div>
-    <!--header start-->
-    <header id="header">
+    </div>-->
         <nav id="navber">
             <div class="container">
                 <div class="row">
@@ -38,17 +38,20 @@
                 </div>
             </div>
         </nav>
-        <div class="banner_content">
-            <div class="container">
-                <div class="contentItem">
-                    <h2>Hello! i'm</h2>
-                    <h1>Martin Luther</h1>
-                    <p>WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | MOBILE APPS</p>
-                    <a href="#">Let's talk New</a>
-                </div>
+    <div class="banner_content">
+       <div class="slider_item" style="background: url(img/home.jpg); background-size: cover; background-position:center; "></div>
+       <div class="slider_item" style="background: url(img/home2.jpg) ;background-size: cover; background-position:center;"></div>
+       <div class="slider_item" style="background: url(img/home3.jpg); background-size: cover; background-position:center; "></div>
+       <div class="slider_item" style="background: url(img/home4.jpg); background-size: cover;  background-position:center; "></div>
+        <div class="container">
+            <div class="contentItem">
+                <h2>Hello! i'm</h2>
+                <h1>Martin Luther</h1>
+                <p>WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | MOBILE APPS</p>
+                <a href="#">Let's talk New</a>
             </div>
         </div>
-    </header>
+    </div>
     <!--header end-->
     <!--About me section start-->
     <section id="about_me">
@@ -184,54 +187,81 @@
                 <div class="row">
                     <div class="contentItem">
                         <img src="img/portfolio-1.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-1.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-2.jpg" alt="">
+                        <a class="portfolio_img_link" data-gall="portfolio_gallery" href="img/portfolio-2.jpg">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-3.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-3.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-4.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-4.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-5.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-5.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-6.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-6.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-7.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-7.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-8.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-8.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
                     </div>
                     <div class="contentItem">
                         <img src="img/portfolio-1.jpg" alt="">
+                        <a class="portfolio_img_link" href="img/portfolio-1.jpg" data-gall="portfolio_gallery">
+                            <span></span>
+                        </a>
                         <a href="">
                             <h3>Our Photography</h3>
                         </a>
@@ -241,13 +271,16 @@
         </div>
     </section>
     <!--My portfolio section end-->
+    <!--Testiminails start-->
 
 
     <button class="backtoTop">
         <i class="flaticon-arrow-up"></i>
     </button>
     <noscript>Please enable to JavaScript</noscript>
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

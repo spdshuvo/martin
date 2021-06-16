@@ -57,12 +57,7 @@ li{
     -o-transform: translate(-50%, -50%);
 }
 /*header css start*/
-#header{
-    background-image: url(../img/home.jpg);
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-}
+
 #navber{
     border-bottom: 1px solid rgba(255, 255, 255, 0.37);
     box-shadow:0 0 15px 5px rgba(58, 78, 95, 0.2) ;
@@ -157,6 +152,13 @@ li{
     padding: 15px;
 }
 .banner_content{
+    position: relative;
+}
+.banner_content .slider_item{
+    height: 100vh;
+    position: relative;
+}
+.banner_content .contentItem{
     position: absolute;
     top: 50%;
     bottom: 50%;
@@ -271,7 +273,7 @@ li{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-   transition: all linear 0.6s;
+   transition: all linear 0.6s; 
 }
 .icon  a:hover{
     background: #fff;
@@ -328,6 +330,7 @@ li{
 }
 #myServices .contentItem .contentItem_text:hover{
     border-color:#f34236;
+    margin-top:5px;
 } 
 #myServices .contentItem .contentItem_text span{
     font-size:60px;
@@ -447,8 +450,8 @@ li{
     position: relative;
     box-shadow: 0 0 30px -4px #1113,0 0 20px -20px #1111111f;
 }
-.myPortfolio_item .contentItem::after,
-.myPortfolio_item .contentItem::before{
+.myPortfolio_item .contentItem span::after,
+.myPortfolio_item .contentItem span::before{
     position: absolute;
     content:"";
     width:60px;
@@ -470,7 +473,7 @@ li{
     opacity:0;
     visibility: hidden;
 }
-.myPortfolio_item .contentItem::after{
+.myPortfolio_item .contentItem span::after{
     width:2px;
     height: 60px;
 }
@@ -490,16 +493,16 @@ li{
     color:#fff;
     visibility: hidden;
 }
-.myPortfolio_item .contentItem:hover{
-    background:#a76a66 ! important ;
+.myPortfolio_item .contentItem img:hover{
+    background:#a76a66;
 }
 .myPortfolio_item .contentItem:hover a h3
 {
     opacity: 1;
     visibility:visible;
 }
-.myPortfolio_item .contentItem:hover::after,
-.myPortfolio_item .contentItem:hover::before{
+.myPortfolio_item .contentItem:hover span::after,
+.myPortfolio_item .contentItem:hover span::before{
     opacity: 1;
     visibility:visible;
 }
