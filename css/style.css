@@ -423,6 +423,9 @@ li{
 }
 /*Connecting section css end*/
 /*My portfolio section css start*/
+#myPortfolio{
+    padding-bottom: 100px;
+}
 #myPortfolio .menu{
     text-align: center;
 }
@@ -526,3 +529,104 @@ li{
     cursor: pointer;
     display: none;
 }
+/*Testiminails css start*/
+#testiminails{
+    background-color: #F3F3F3;
+    padding: 100px 0;
+    
+}
+#testiminails .testiminails_content{
+    margin: 0 auto;
+    padding:50px 20px 30px;
+    width:520px;
+    height:350px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border:1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 30px -4px #1113,0 0 20px -20px #1111111f;
+}
+.testiminails_content .content_img{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testiminails_content .content_img img{
+    display:block;
+    width:100%;
+}
+.testiminails_content .content_info h5{
+    font-size:18px;
+    font-weight: 600;
+    padding:20px 0 4px 0 ;
+    color: #111111;
+}
+.testiminails_content .content_info p{
+    font-size:15px;
+    line-height:1.6;
+    color: #828282;
+}
+/*Testiminails css end*/
+/*My Blogs css start*/
+.myBlogs_content{
+    margin: 40px 0 100px;
+}
+.myBlogs_contentItem{
+    width: 360px;
+    height: 480px;
+    margin: 0 10px;
+    box-shadow: 0 0 30px -4px #1113,0 0 20px -20px #1111111f;
+    
+}
+.myBlogs_contentItem .content_img{
+    width: 100%;
+    height: 275px;
+    overflow: hidden;
+}
+
+.myBlogs_contentItem .content_img img{
+    display:block;
+    width: 100%;
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.myBlogs_contentItem .content_img img:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.myBlogs_contentItem .content_info{
+    padding: 10px;
+}
+.myBlogs_contentItem .content_info span{
+    font-size:15px;
+    line-height:1.6;
+    color: #828282;
+    margin:10px 0;
+}
+.myBlogs_contentItem .content_info h3{
+    font-size:22px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+/*My Blogs css end*/
